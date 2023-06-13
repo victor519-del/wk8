@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a dom</title>
+</head>
+<body>
+    <section>
+
+    </section>
+</body>
+<script>
+    const section = document.querySelector('section')
+
+    const heading = document.createElement('h2')
+    
+    section.append(heading)
+
+    
+    const image= document.createElement('img')
+
+    section.append(image)
+
+    heading.innerText = 'THIS IS APPEND ELEMENT'
+
+
+    image.setAttribute('src', './adam.jpg')
+    image.setAttribute('alt', 'a mountain')
+
+    image.setAttribute('width','600')
+
+
+    document.body.style.background = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
+    document.body.style.color = 'white'
+</script>
+</html>

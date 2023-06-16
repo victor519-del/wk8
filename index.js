@@ -31,6 +31,7 @@ right[0].style.backgroundColor = '#12d'
 const left = document.getElementsByClassName('left')[0]
 left.style.backgroundColor = '#8ca'
 
+GamepadButton
 
 
 
